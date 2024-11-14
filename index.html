@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Paraphrasing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Text Paraphrasing</h1>
+        <form id="paraphraseForm">
+            <label for="inputText">Enter Text:</label>
+            <textarea id="inputText" name="inputText" required></textarea>
+
+            <label for="tone">Select Tone:</label>
+            <select id="tone" name="tone">
+                <option value="Fluent">Fluent</option>
+                <option value="Formal">Formal</option>
+                <option value="Informal">Informal</option>
+            </select>
+
+            <label for="skipRealtime">Skip Realtime:</label>
+            <input type="checkbox" id="skipRealtime" name="skipRealtime">
+
+            <button type="submit">Paraphrase Text</button>
+        </form>
+
+        <div id="outputText"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
